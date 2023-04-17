@@ -24,7 +24,7 @@ permissions:
 jobs:
 
   unit:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       security-events: write
     steps:
@@ -56,7 +56,7 @@ jobs:
         flags: unittests  # optional
 
   lint:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       security-events: write
     steps:
@@ -101,7 +101,7 @@ jobs:
         yamllint_config_filepath: .yamllint
 
   scan:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       security-events: write
     steps:

@@ -27,7 +27,7 @@ permissions:
 jobs:
 
   conf:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       contents: read
     outputs:
@@ -58,7 +58,7 @@ jobs:
   verify:
     needs:
     - provenance
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       actions: read
       id-token: write

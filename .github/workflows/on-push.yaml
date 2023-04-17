@@ -18,7 +18,7 @@ jobs:
       ERR_VULNERABILITY_SEV: "CRITICAL,HIGH,MEDIUM"
       GO_VERSION: "1.20.2"
 
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       contents: read
     outputs:

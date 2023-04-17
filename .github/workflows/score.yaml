@@ -9,7 +9,7 @@ permissions: read-all
 jobs:
   score:
     name: Scorecards analysis
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       security-events: write
       id-token: write

@@ -35,7 +35,7 @@ jobs:
   build:
     outputs:
       digest: ${{ steps.image.outputs.digest }}
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       actions: read
       id-token: write

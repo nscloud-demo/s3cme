@@ -31,7 +31,7 @@ permissions:
 
 jobs:
   scan:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       actions: read
       id-token: write
@@ -63,7 +63,7 @@ jobs:
   sign:
     needs:
     - scan
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     permissions:
       actions: read
       id-token: write
